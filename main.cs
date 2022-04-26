@@ -8,7 +8,18 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello World");
+        int integer;
+
+        Console.Write("Enter an integer: ");
+        integer = Convert.ToInt32(Console.ReadLine());
+        if (integer >= 0)
+        {
+            Console.Write(integer + " is a positive integer.");
+        }
+        else
+        {
+            Console.Write(integer + " is a negative integer.");
+        }
         Console.WriteLine("\nFinished.");
     }
 }
